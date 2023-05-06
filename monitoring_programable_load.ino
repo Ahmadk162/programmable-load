@@ -10,12 +10,12 @@ int pwm_percentage_1, pwm_percentage_2 = 0;
 char pwm1[8]={'0','0','0','0','0','0','0','0'};
 char pwm2[8]={'0','0','0','0','0','0','0','0'};
 // Update these with values suitable for your network.
-const char* ssid = "Galaxy A31C07A";
-const char* password = "pfth2877";
-const char* mqtt_server = "ecc314201618401fa03dd06ff1e7fdf1.s2.eu.hivemq.cloud";
-#define mqtt_port 8883
-#define MQTT_USER "esp32"
-#define MQTT_PASSWORD "esp32esp32"
+const char* ssid = "your wifi ssid";
+const char* password = "your wifi password";
+const char* mqtt_server = "your mqtt server link";
+#define mqtt_port your_MQTT_port
+#define MQTT_USER "your_mqtt_user_name"
+#define MQTT_PASSWORD "your_mqqtt_password"
 //list of topic
 #define MQTT_SERIAL_PUBLISH_CH "/icircuit/ESP32/serialdata/tx"
 #define MQTT_SERIAL_PUBLISH_CH_pwm1 "/icircuit/ESP32/serialdata/tx/pwm1"
@@ -49,7 +49,7 @@ uint32_t start_time=0;
 int i_get_max=0;
 uint16_t r=0;
 uint16_t max_v = 0;
-
+//YOUR BROKER CERTIFICATE
 const char* test_root_ca= \
           "-----BEGIN CERTIFICATE-----\n"\
       "MIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\n"\
